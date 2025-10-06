@@ -50,7 +50,7 @@ body {
   flex-direction: column;
 }
 
-/* flex container for nav-section + main */
+/* flex container for other section + main */
 .content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -58,8 +58,8 @@ body {
   gap: 20px;
 }
 
-/* The section with your recipe photos */
-.nav-section {
+/* The section with the recipe photos */
+.recipe-section {
   width: 600px;
   background-color: #CDE990;
   padding: 20px;
@@ -203,9 +203,54 @@ a:visited {
   color: rgb(179, 0, 90);
 }
 
-/* form */
-form {
+input[type=submit] {
+  border:#ffd6df;
+  background-color: #fff4f5;
+  padding: 12px;
+}
+
+#mailing-list {
+  width: 100%;
+  background-color: #ffe2e9;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+#mailing-list form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  background-color: #fff4f7;
+  width: 100%;
 }
+
+/* form */
+form input[type=text] {
+  gap: 12px;
+  margin: 4px;
+  width: 200px;
+}
+
+#mailing-list form p {
+  text-align: center;
+  padding-left: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Gowun Dodum', sans-serif;
+  color: palevioletred;
+  
+}
+
+#mailing-list button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f5a3b8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
