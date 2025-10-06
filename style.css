@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#page-container {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFD4D4;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* colors */
+.floatRight > div {
+  color: rgb(156, 68, 119);
+}
+
+.floatLeft > div {
+  color: rgb(61, 145, 65);
+}
+
+h3 {
+  color: rgb(61, 145, 65);
+}
+
+/* flex container for nav + main... I couldn't figure out how to get the table on the bottom without it to be honest >_< */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px;
+}
+
+
+/* navigation box (well, right now it just has the highlight pictures, but yeah) */
+nav {
+  width: 600px;
+  background-color: #CDE990;
+  padding: 20px;
+  text-align: center;
+  color: rgb(61, 145, 65);
+  font-family: "Gowun Dodum", sans-serif;
+  border: 6px solid pink;
+  box-shadow: 2px 5px 1rem palevioletred;
+}
+
+/* main box and the text inside of it (my bio + site explanation) */
+main {
+  width: 500px;
+  background-color: #FFFFE8;
+  color: palevioletred;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 13.5px;
+  padding: 20px;
+  border: 6px solid lemonchiffon;
+  box-shadow: 2px 5px 1rem rgb(255, 219, 152);
+}
+
+main h2 {
+  background-color: #FFEFEF;
+}
+
+/* Table container */
+.recipeContainer {
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.recipesToAdd {
+  border: 4px solid hsl(357, 100%, 85%);
+  overflow-x: auto;
+}
+
+.recipeTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recipeTable th, .recipeTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.recipeTable th {
+  background-color: #f8d7da;
+}
+
+tr {
+  color: rgb(216, 43, 77);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  clear: both;
+}
+
+footer p {
+  color: rgb(233, 89, 137);
+}
+
+/* button stuff */
+button {
+    align-self: center;
+    width: 150px;
+    height: auto;
+    background-color: #fffda2a1;
+    border-color: #ff2c2c36;
+    color: #cf647f;
+    border-radius: 8px;
+}
+
+/* unordered list stuff */
+#tidbits {
+  list-style-image: url('images/letter.png');
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+#comingSoon {
+  list-style-image: url('images/lilheart.png');
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-right: 50px;
+}
+
+#comingSoon li {
+  background: mistyrose;
+  color: rgb(233, 89, 137);
+  text-align: center;
+}
+
+#spotlight {
+    text-align: center;
+    background-color: #d9ebb3;
+    width: 800px;
+    border: 3px solid #b3cf64;
+    margin: 20px auto;
+    box-shadow: 2px 5px 1rem rgb(31, 92, 36);
+}
+
+#spotlight h4 {
+    font-family: "Gowun Dodum", sans-serif;
+    color: rgb(61, 145, 65);
+
+}
+
+#spotlight p {
+    font-size: 18px;
+    color: rgb(61, 145, 65);
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+/* header appearance */
+header h1 {
+  text-align: center;
+  color: rgb(233, 89, 137);
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 35px;
+  text-shadow: 3px 3px 3px #7e264359;
+}
+
+/* css for the links! */
+a:hover {
+  background-color: rgb(250, 255, 202);
+  color: #66af54;
+  font-size: 15px;
+}
+
+a:active {
+  background-color: #ffc4d1;
+}
+
+a:link {
+  color: rgb(255, 119, 187);
+}
+
+a:visited {
+  color: rgb(179, 0, 90);
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⋆｡°✩ Welcome ✩°｡⋆</title>
+  <link href="https://fonts.googleapis.com/css?family=Gowun Dodum" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"/>
+  <style>
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page-container">
+    <header>
+      <h1>Welcome to my recipe diary!</h1>
+    </header>
+
+    <div class="content-wrapper">
+      <nav>
+        <h3>Some of the things I've cooked up (or baked) up!</h3>
+
+        <div>
+          <a href="https://www.allrecipes.com/recipe/19017/chocolate-trifle/">
+            <img src="./images/chocolate_trifle.jpg" alt="A chocolate trifile with layers of pudding, brownies, and whipped cream." title="This was a hit with the family on Thanksgiving!" width="100" height="75"/>
+          </a>
+          <p>
+            When talking about Christmas dishes with a friend, <br />
+            she mentioned that
+            <a href="https://www.allrecipes.com/recipe/19017/chocolate-trifle/">trifles</a> are a tradition in her fiance's home. <br />
+            This inspired me to make my own, as I always thought <br />
+            they looked delicious!
+          </p>
+        </div>
+
+        <div>
+          <a href="https://www.backenmachtgluecklich.de/rezepte/super-saftiger-sprudelkuchen-vom-blech-selterskuchen.html">
+            <img src="./images/selterskuchen.jpg" alt="A selterskuchen (seltzer cake) dusted with powdered sugar." title="This cake was so fluffy! The seltzer really makes a difference!" width="100" height="100"/>
+          </a>
+          <p>
+            A close friend of mine from Germany told me how <br />
+            she loved the taste of her grandmother's
+            <a href="https://www.backenmachtgluecklich.de/rezepte/super-saftiger-sprudelkuchen-vom-blech-selterskuchen.html"><i>selterskuchen</i></a>, <br />
+            and it sounded so tasty that I wanted to make one myself!
+          </p>
+        </div>
+
+        <div>
+          <a href="https://a.co/d/dpRskBR">
+            <img src="./images/pie.jpg" alt="A pie with an assortment of berries baked into it." title="This was called Laumberry pie in the book 'Heroes' Feast: Flavors of the Multiverse.'" width="100" height="75"/>
+          </a>
+          <p>
+            My brother had asked me to make a pie for his <br />
+            <i>Dungeons & Dragons</i>-themed birthday party. This one was <br />
+            specifically from a <a href="https://a.co/d/dpRskBR">D&D-licensed cookbook.</a>
+          </p>
+        </div>
+      </nav>
+
+      <main>
+        <div>
+          <h2><em>Hello, it's nice to meet you!</em></h2>
+          <p>
+            Hi there! My name is <strong>Aaliyah</strong>, or Liya for short if that's easier to say! I'm excited to learn how to make websites in this course. I apologize if this website is a bit ugly, but the ugliness here at the beginning of everything only makes me more excited about what's to come—I'm looking forward to eventually learning about how to make webpages look nice, too!
+          </p>
+          <br />
+          <p>Some random tidbits about this site's author (me!):</p>
+          <ul id="tidbits">
+            <li>I currently work as a photographer!</li>
+            <li>I grew up in San Antonio, Texas for almost my entire life, but I'm originally from Las Vegas, Nevada.</li>
+            <li>
+              Every weekend, my friends and I get together for a weekly movie night to hopefully one day be able to call ourselves film buffs (or at least expand the list of films we've seen. These past three weeks, we've watched <i>The Black Phone</i>, <i>The Notebook</i>, and <i>Argo</i>.
+            </li>
+            <li>Some other hobbies of mine include roller-skating, playing games, and going on walks.</li>
+          </ul>
+
+          <br />
+          <p>
+            I'd like to eventually turn this site into a full-on recipe diary, but for now, I'll keep you updated with some of the things I've made in the past and during the process of working on this website!
+            <br />Information and sources for the recipes I referenced while making them can be visited by clicking on their pictures or links.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <button id="button" onclick="showMore()">What's cooking?</button>
+
+    
+    
+
+    <div id="recipes" class="recipeContainer">
+      <h4 style="color: palevioletred; text-align: center;"> Coming soon to the diary...</h4>
+      <div class="recipesToAdd">
+        <table class="recipeTable w3-sand">
+          <tr>
+            <th>Recipe Name</th>
+            <th>Category</th>
+            <th>Total Time</th>
+            <th>Rating</th>
+            <th>Notes</th>
+          </tr>
+          <tr>
+            <td>Trifle (Chocolate / Strawberry)</td>
+            <td>Dessert</td>
+            <td>3 hours</td>
+            <td styl>&#11088&#11088&#11088&#11088&#11088</td>
+            <td>Both real hits!</td>
+          </tr>
+          <tr>
+            <td>Spinach Stuffed Chicken</td>
+            <td>Dinner</td>
+            <td>1.5 hours</td>
+            <td>&#11088&#11088&#11088&#11088</td>
+            <td>I looooove cream cheese... but the chicken itself can turn out kind of dry.</td>
+          </tr>
+          <tr>
+            <td>Selterskuchen</td>
+            <td>Dessert</td>
+            <td>45 minutes</td>
+            <td>&#11088&#11088&#11088&#11088</td>
+            <td>Slightly difficult finding the exact vanilla specified in the recipe? But delicious!</td>
+          </tr>
+          <tr>
+            <td>Mixed Berry Pie</td>
+            <td>Dessert</td>
+            <td>2 hours</td>
+            <td>&#11088&#11088&#11088</td>
+            <td>I just wished there was crust on top as well!</td>
+          </tr>
+          <tr>
+            <td>Chicken and Shrimp Carbonara</td>
+            <td>Dinner</td>
+            <td>1 hour</td>
+            <td>&#11088&#11088&#11088&#11088&#11088</td>
+            <td>A family favorite.</td>
+          </tr>
+        </table>
+      </div>
+
+      <p style="text-align: center; color: rgb(233, 89, 137);">Amongst some other things, like...</p>
+      <ul id="comingSoon">
+        <li>Recipe category pages!</li>
+        <li>Individual recipe pages!</li>
+        <li>An about + contact page!</li>
+      </ul>
+    </div>
+    
+    <script>
+    document.getElementById("recipes").style.display ="none";
+    </script>
+
+    <script>
+    function showMore() {
+    document.getElementById("recipes").style.display = "block";
+    }
+    document.getElementById('button').addEventListener('click', showMore);
+   </script>
+
+   <div id="spotlight">
+    <h4 id="spotlightTitle">Cool Recipe of the Week! &#128150<h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6pZ7uHW1L84?si=MgS_YJHJBKn_dZhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Malasadas by Hawaii's Pickle Lady (Leonora Ching) 
+        <br/>These look so good! 
+    </p>
+</div>
+   
+    <footer>
+      <p>─── ⋆⋅☆ Thank you for visiting! ☆⋅⋆ ──</p>
+    </footer>
+  </div>
+</body>
+</html>
