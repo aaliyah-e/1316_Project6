@@ -16,23 +16,35 @@
 </head>
 
 <body>
+  <!-- nav bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">home</a></li>
+      <li><a href="./recipes.html">recipes</a></li>
+      <li><a href="./diary.html">diary</a></li>
+      <li><a href="./about.html">about</a></li>
+      <li><a href="./contact.html">contact</a></li>
+    </ul>
+  </nav>
+
   <div id="page-container">
     <header>
       <h1>Welcome to my recipe diary!</h1>
     </header>
 
+    <!-- content wrapper -->
     <div class="content-wrapper">
-      <nav>
+      <div class="nav-section">
         <h3>Some of the things I've cooked up (or baked) up!</h3>
 
         <div>
           <a href="https://www.allrecipes.com/recipe/19017/chocolate-trifle/">
-            <img src="./images/chocolate_trifle.jpg" alt="A chocolate trifile with layers of pudding, brownies, and whipped cream." title="This was a hit with the family on Thanksgiving!" width="100" height="75"/>
+            <img src="./images/chocolate_trifle.jpg" alt="A chocolate trifle with layers of pudding, brownies, and whipped cream." title="This was a hit with the family on Thanksgiving!" width="100" height="75"/>
           </a>
           <p>
             When talking about Christmas dishes with a friend, <br />
             she mentioned that
-            <a href="https://www.allrecipes.com/recipe/19017/chocolate-trifle/">trifles</a> are a tradition in her fiance's home. <br />
+            <a href="https://www.allrecipes.com/recipe/19017/chocolate-trifle/">trifles</a> are a tradition in her fiancé's home. <br />
             This inspired me to make my own, as I always thought <br />
             they looked delicious!
           </p>
@@ -60,7 +72,7 @@
             specifically from a <a href="https://a.co/d/dpRskBR">D&D-licensed cookbook.</a>
           </p>
         </div>
-      </nav>
+      </div>
 
       <main>
         <div>
@@ -74,7 +86,7 @@
             <li>I currently work as a photographer!</li>
             <li>I grew up in San Antonio, Texas for almost my entire life, but I'm originally from Las Vegas, Nevada.</li>
             <li>
-              Every weekend, my friends and I get together for a weekly movie night to hopefully one day be able to call ourselves film buffs (or at least expand the list of films we've seen. These past three weeks, we've watched <i>The Black Phone</i>, <i>The Notebook</i>, and <i>Argo</i>.
+              Every weekend, my friends and I get together for a weekly movie night to hopefully one day be able to call ourselves film buffs (or at least expand the list of films we've seen). These past three weeks, we've watched <i>The Black Phone</i>, <i>The Notebook</i>, and <i>Argo</i>.
             </li>
             <li>Some other hobbies of mine include roller-skating, playing games, and going on walks.</li>
           </ul>
@@ -89,9 +101,6 @@
     </div>
 
     <button id="button" onclick="showMore()">What's cooking?</button>
-
-    
-    
 
     <div id="recipes" class="recipeContainer">
       <h4 style="color: palevioletred; text-align: center;"> Coming soon to the diary...</h4>
@@ -108,35 +117,35 @@
             <td>Trifle (Chocolate / Strawberry)</td>
             <td>Dessert</td>
             <td>3 hours</td>
-            <td styl>&#11088&#11088&#11088&#11088&#11088</td>
+            <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
             <td>Both real hits!</td>
           </tr>
           <tr>
             <td>Spinach Stuffed Chicken</td>
             <td>Dinner</td>
             <td>1.5 hours</td>
-            <td>&#11088&#11088&#11088&#11088</td>
+            <td>&#11088;&#11088;&#11088;&#11088;</td>
             <td>I looooove cream cheese... but the chicken itself can turn out kind of dry.</td>
           </tr>
           <tr>
             <td>Selterskuchen</td>
             <td>Dessert</td>
             <td>45 minutes</td>
-            <td>&#11088&#11088&#11088&#11088</td>
+            <td>&#11088;&#11088;&#11088;&#11088;</td>
             <td>Slightly difficult finding the exact vanilla specified in the recipe? But delicious!</td>
           </tr>
           <tr>
             <td>Mixed Berry Pie</td>
             <td>Dessert</td>
             <td>2 hours</td>
-            <td>&#11088&#11088&#11088</td>
+            <td>&#11088;&#11088;&#11088;</td>
             <td>I just wished there was crust on top as well!</td>
           </tr>
           <tr>
             <td>Chicken and Shrimp Carbonara</td>
             <td>Dinner</td>
             <td>1 hour</td>
-            <td>&#11088&#11088&#11088&#11088&#11088</td>
+            <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
             <td>A family favorite.</td>
           </tr>
         </table>
@@ -149,28 +158,53 @@
         <li>An about + contact page!</li>
       </ul>
     </div>
-    
+
     <script>
-    document.getElementById("recipes").style.display ="none";
+      document.getElementById("recipes").style.display ="none";
+      function showMore() {
+        document.getElementById("recipes").style.display = "block";
+      }
+      document.getElementById('button').addEventListener('click', showMore);
     </script>
 
-    <script>
-    function showMore() {
-    document.getElementById("recipes").style.display = "block";
-    }
-    document.getElementById('button').addEventListener('click', showMore);
-   </script>
+    <div id="spotlight">
+      <h4 id="spotlightTitle">Cool Recipe of the Week! 💗</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6pZ7uHW1L84?si=MgS_YJHJBKn_dZhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Malasadas by Hawaii's Pickle Lady (Leonora Ching)<br/>These look so good!</p>
+      <audio controls>
+        <source src="./audio/sizzle.mp3" type="audio/mp3">
+        The audio cannot play as your browser does not support the audio element.
+      </audio> 
+    </div>
 
-   <div id="spotlight">
-    <h4 id="spotlightTitle">Cool Recipe of the Week! &#128150<h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6pZ7uHW1L84?si=MgS_YJHJBKn_dZhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>Malasadas by Hawaii's Pickle Lady (Leonora Ching) 
-        <br/>These look so good! 
-    </p>
-</div>
-   
+
+      <p style="color: palevioletred;">Join the mailing list! (currently defunct!) </p>
+          <input type="text" id="fname" name="fname" placeholder="First name" required>
+          <input type="text" id="lname" name="lname" placeholder="Last name" required>
+          <input type="email" id="email" name="email" placeholder="E-mail Address" required>
+
+          <button type="submit">Submit</button>
+        </form>
+
     <footer>
       <p>─── ⋆⋅☆ Thank you for visiting! ☆⋅⋆ ──</p>
+      <!-- drawing canvas rectangle -->
+      <canvas id="myCanvas" width="250" height="150" style="border:1px solid #ce2a53;">
+      Sorry, your browser does not support canvas!
+    </canvas>
+    
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      
+      // defining the path
+      ctx.beginPath();
+      // start-point
+      // end-point
+      ctx.lineTo(200,100);
+      // drawing the rectangle
+      ctx.stroke();
+      </script>
     </footer>
   </div>
 </body>
